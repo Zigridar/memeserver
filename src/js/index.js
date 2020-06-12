@@ -216,6 +216,7 @@ $('#plasma').click(() => {
     rectangleArr = []
     dickArr = []
     World.clear(engine.world, true)
+    addToWorld(mConstraint)
 })
 
 $('#diplom').click(() => {
