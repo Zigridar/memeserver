@@ -34,25 +34,5 @@ app.use(bodyParser.json())
 app.post('/', (req, res) => {
     console.log(req.body)
     console.log(req.headers)
-    // res.end(JSON.stringify(req.body))
     res.end("kek")
 })
-
-// io.on('connection', socket => {
-//
-//     console.log('connection')
-//
-//     socket.on('offer', (offer) => {
-//         socket.emit('answer', 'data')
-//         console.log('offer');
-//     });
-//
-//     socket.on('answer', (answer, id) => {
-//         console.log('answer')
-//     });
-//
-//     socket.on('disconnect', () => {
-//         console.log('disconnect')
-//     });
-//
-// });
