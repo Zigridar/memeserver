@@ -1,11 +1,14 @@
 'use strict'
 /** Matter.js modules **/
+
+const Matter = require('matter-js')
+const $ = require('jquery')
+
 const Engine = Matter.Engine
 const Render = Matter.Render
 const World = Matter.World
 const Bodies = Matter.Bodies
 const Body = Matter.Body
-const Constraint = Matter.Constraint
 const Svg = Matter.Svg
 const Mouse = Matter.Mouse
 const MouseConstraint = Matter.MouseConstraint
@@ -90,17 +93,7 @@ const render = Render.create({
     }
 })
 
-// const bodyA = Bodies.rectangle(1000, 600, 80, 20)
-// const bodyB = Bodies.rectangle(50, 300, 80, 20)
-//
-// const options = {
-//     bodyA: bodyA,
-//     bodyB: bodyB,
-//     length: 50,
-//     stiffness: 0.1
-// }
-//
-// const constraint = Constraint.create(options)
+
 const d = document.getElementsByTagName('canvas')
 const mouse = Mouse.create(d[0])
 
